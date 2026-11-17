@@ -32,7 +32,6 @@
       padding-bottom: 90px;
     }
 
-    /* Header */
     header {
       position: sticky;
       top: 0;
@@ -69,7 +68,6 @@
       justify-content: center;
       font-weight: 800;
       font-size: 18px;
-      letter-spacing: -0.5px;
       flex-shrink: 0;
     }
     .brand-text strong {
@@ -102,35 +100,22 @@
       font-size: 13px;
       font-weight: 600;
       text-decoration: none;
-      transition: 0.2s;
     }
-    .btn-phone {
-      background: #f1f5f9;
-      color: var(--text);
-    }
-    .btn-phone:hover { background: #e2e8f0; }
-    .btn-wa-top {
-      background: var(--whatsapp);
-      color: #fff;
-    }
-    .btn-wa-top:hover { background: var(--whatsapp-dark); }
+    .btn-phone { background: #f1f5f9; color: var(--text); }
+    .btn-wa-top { background: var(--whatsapp); color: #fff; }
 
-    /* Container */
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px 16px;
     }
 
-    /* Hero Banner */
     .hero {
       background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
       color: #fff;
       border-radius: 20px;
       padding: 28px 24px;
       margin-bottom: 24px;
-      position: relative;
-      overflow: hidden;
     }
     .hero-badge {
       display: inline-block;
@@ -142,7 +127,6 @@
       border-radius: 99px;
       margin-bottom: 10px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
     .hero h1 {
       font-size: 24px;
@@ -166,7 +150,6 @@
     }
     .hero-stats strong { color: #fff; font-size: 15px; }
 
-    /* Search Box */
     .search-box {
       position: relative;
       margin-bottom: 24px;
@@ -182,9 +165,7 @@
       color: var(--text);
       box-shadow: var(--shadow);
       outline: none;
-      transition: border-color 0.2s;
     }
-    .search-box input:focus { border-color: var(--primary); }
     .search-icon {
       position: absolute;
       left: 15px;
@@ -194,7 +175,6 @@
       font-size: 18px;
     }
 
-    /* Section Titles */
     .section-head {
       display: flex;
       align-items: center;
@@ -204,9 +184,6 @@
     .section-head h2 {
       font-size: 18px;
       font-weight: 800;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
     .section-head span {
       font-size: 12px;
@@ -214,7 +191,6 @@
       font-weight: 600;
     }
 
-    /* Campaign Horizontal Scroll */
     .campaign-grid {
       display: flex;
       gap: 14px;
@@ -223,7 +199,6 @@
       margin-bottom: 28px;
       scrollbar-width: none;
     }
-    .campaign-grid::-webkit-scrollbar { display: none; }
     .campaign-card {
       min-width: 220px;
       max-width: 220px;
@@ -247,7 +222,6 @@
       margin-bottom: 8px;
     }
 
-    /* Category Pills */
     .category-tabs {
       display: flex;
       gap: 8px;
@@ -256,7 +230,6 @@
       margin-bottom: 18px;
       scrollbar-width: none;
     }
-    .category-tabs::-webkit-scrollbar { display: none; }
     .cat-btn {
       padding: 9px 16px;
       border-radius: 99px;
@@ -267,7 +240,6 @@
       font-weight: 600;
       cursor: pointer;
       white-space: nowrap;
-      transition: 0.2s;
     }
     .cat-btn.active {
       background: var(--primary);
@@ -275,7 +247,6 @@
       border-color: var(--primary);
     }
 
-    /* Product Grid */
     .product-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -294,15 +265,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.2s;
     }
     .product-img-wrap {
       width: 100%;
       aspect-ratio: 1 / 1;
       background: #f1f5f9;
       position: relative;
-      overflow: hidden;
-      cursor: pointer;
     }
     .product-img-wrap img {
       width: 100%;
@@ -320,7 +288,6 @@
       font-weight: 600;
       padding: 3px 8px;
       border-radius: 6px;
-      backdrop-filter: blur(4px);
     }
     .product-body {
       padding: 12px;
@@ -334,10 +301,6 @@
       font-weight: 700;
       color: var(--text);
       margin-bottom: 4px;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
     }
     .product-desc {
       font-size: 12px;
@@ -365,11 +328,8 @@
       font-size: 12px;
       font-weight: 700;
       cursor: pointer;
-      transition: 0.2s;
     }
-    .btn-add:hover { background: var(--primary-dark); }
 
-    /* Floating Cart Bar */
     .cart-bar {
       position: fixed;
       bottom: 16px;
@@ -387,7 +347,6 @@
       box-shadow: 0 12px 30px rgba(15, 23, 42, 0.3);
       z-index: 50;
       cursor: pointer;
-      transition: transform 0.2s;
     }
     .cart-bar.hidden { display: none; }
     .cart-bar-left { display: flex; align-items: center; gap: 12px; }
@@ -401,20 +360,16 @@
     }
     .cart-bar-right { font-weight: 700; font-size: 14px; color: #5eead4; }
 
-    /* Modal / Cart Drawer */
     .modal-backdrop {
       position: fixed;
       inset: 0;
       background: rgba(15, 23, 42, 0.6);
-      backdrop-filter: blur(4px);
       z-index: 60;
       display: none;
       align-items: flex-end;
       justify-content: center;
     }
-    @media (min-width: 640px) {
-      .modal-backdrop { align-items: center; }
-    }
+    @media (min-width: 640px) { .modal-backdrop { align-items: center; } }
     .modal-backdrop.open { display: flex; }
     .modal-box {
       background: var(--card);
@@ -425,11 +380,8 @@
       padding: 20px;
       display: flex;
       flex-direction: column;
-      overflow: hidden;
     }
-    @media (min-width: 640px) {
-      .modal-box { border-radius: 22px; }
-    }
+    @media (min-width: 640px) { .modal-box { border-radius: 22px; } }
     .modal-header {
       display: flex;
       align-items: center;
@@ -447,11 +399,7 @@
       font-size: 18px;
       cursor: pointer;
     }
-    .cart-items {
-      overflow-y: auto;
-      padding: 14px 0;
-      flex-grow: 1;
-    }
+    .cart-items { overflow-y: auto; padding: 14px 0; flex-grow: 1; }
     .cart-item {
       display: flex;
       align-items: center;
@@ -462,61 +410,28 @@
     }
     .cart-item-info strong { display: block; font-size: 14px; }
     .cart-item-info span { font-size: 12px; color: var(--muted); }
-    .qty-controls {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .qty-controls { display: flex; align-items: center; gap: 8px; }
     .qty-btn {
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #f8fafc;
-      font-weight: 700;
-      cursor: pointer;
+      width: 28px; height: 28px; border-radius: 8px;
+      border: 1px solid var(--border); background: #f8fafc; font-weight: 700; cursor: pointer;
     }
     .customer-note {
-      width: 100%;
-      padding: 10px 12px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      font-family: inherit;
-      font-size: 13px;
-      margin-top: 10px;
-      resize: none;
+      width: 100%; padding: 10px 12px; border: 1px solid var(--border);
+      border-radius: 10px; font-family: inherit; font-size: 13px; margin-top: 10px; resize: none;
     }
     .btn-whatsapp-order {
-      width: 100%;
-      background: var(--whatsapp);
-      color: #fff;
-      border: none;
-      border-radius: 14px;
-      padding: 14px;
-      font-size: 15px;
-      font-weight: 800;
-      cursor: pointer;
-      margin-top: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+      width: 100%; background: var(--whatsapp); color: #fff; border: none;
+      border-radius: 14px; padding: 14px; font-size: 15px; font-weight: 800; cursor: pointer;
+      margin-top: 14px; display: flex; align-items: center; justify-content: center; gap: 8px;
     }
-    .btn-whatsapp-order:hover { background: var(--whatsapp-dark); }
-
     footer {
-      text-align: center;
-      padding: 28px 16px;
-      color: var(--muted);
-      font-size: 13px;
-      border-top: 1px solid var(--border);
-      margin-top: 40px;
+      text-align: center; padding: 28px 16px; color: var(--muted);
+      font-size: 13px; border-top: 1px solid var(--border); margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Üst Menü -->
   <header>
     <div class="header-inner">
       <a href="#" class="brand">
@@ -534,7 +449,6 @@
   </header>
 
   <main class="container">
-    <!-- Karşılama Alanı -->
     <section class="hero">
       <span class="hero-badge">Yalçın Toplu Tüketim</span>
       <h1>Ürünleri seçin,<br><span>siparişinizi WhatsApp’tan</span> gönderin.</h1>
@@ -546,13 +460,11 @@
       </div>
     </section>
 
-    <!-- Arama -->
     <div class="search-box">
       <span class="search-icon">🔍</span>
       <input type="text" id="searchInput" placeholder="Ürün adı veya kategori ara...">
     </div>
 
-    <!-- Kampanyalı Ürünler -->
     <section id="campaignSection" style="display:none;">
       <div class="section-head">
         <h2>🔥 Kampanyalı Ürünler</h2>
@@ -561,7 +473,6 @@
       <div class="campaign-grid" id="campaignGrid"></div>
     </section>
 
-    <!-- Kategoriler ve Ürünler -->
     <section>
       <div class="section-head">
         <h2>Ürün Kataloğu</h2>
@@ -576,7 +487,6 @@
     <strong>Yalçın Toplu Tüketim</strong> • İletişim & Sipariş: 0554 112 76 07
   </footer>
 
-  <!-- Alt Sabit Sepet Çubuğu -->
   <div class="cart-bar hidden" id="cartBar" onclick="openCart()">
     <div class="cart-bar-left">
       <span class="cart-count" id="cartCount">0 Ürün</span>
@@ -585,7 +495,6 @@
     <div class="cart-bar-right">Siparişi Tamamla →</div>
   </div>
 
-  <!-- Sepet Penceresi -->
   <div class="modal-backdrop" id="cartModal" onclick="closeCartOutside(event)">
     <div class="modal-box">
       <div class="modal-header">
@@ -607,14 +516,261 @@
   </div>
 
   <script>
-    // =========================================================================
-    // AYARLAR BÖLÜMÜ (BURAYI KENDİ GOOGLE SHEETS CSV LİNKİNİZLE DEĞİŞTİRİN)
-    // =========================================================================
     const WHATSAPP_NUMBER = "905541127607";
     const SHEET_CSV_URL = "BURAYA_GOOGLE_SHEETS_CSV_LINKINI_YAPISTIR";
 
-    // Google Sheets bağlantısı eklenene kadar görünecek örnek ürünler:
     const FALLBACK_PRODUCTS = [
       { id: "1", kategori: "Temizlik", ad: "Yüzey Temizleyici 5 Lt", aciklama: "Koli içi 4 adet", fiyat: 145, resim: "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=500&q=80", kampanya: "Evet" },
       { id: "2", kategori: "Kağıt Grubu", ad: "Endüstriyel Havlu 6'lı", aciklama: "Çift katlı emici", fiyat: 280, resim: "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?w=500&q=80", kampanya: "Evet" },
-      { id: "3", kategori: "Ambalaj", ad: "Karton Bardak 7 oz (3000'li)", aciklama: "1 Koli", fiyat: 950, resim: "
+      { id: "3", kategori: "Ambalaj", ad: "Karton Bardak 7 oz (3000'li)", aciklama: "1 Koli", fiyat: 950, resim: "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?w=500&q=80", kampanya: "Hayır" },
+      { id: "4", kategori: "Gıda & İçecek", ad: "Toz Şeker 50 Kg Çuval", aciklama: "Kristal toz şeker", fiyat: 1650, resim: "https://images.unsplash.com/photo-1581441363689-1f3c3c414635?w=500&q=80", kampanya: "Hayır" }
+    ];
+
+    let allProducts = [];
+    let selectedCategory = "Tümü";
+    let searchQuery = "";
+    let cart = JSON.parse(localStorage.getItem("yalcin_cart") || "{}");
+
+    function parseCSV(text) {
+      const lines = text.trim().split(/\r?\n/);
+      if (lines.length < 2) return [];
+      const headers = lines[0].split(",").map(h => h.trim().toLowerCase().replace(/^"|"$/g, ""));
+      return lines.slice(1).map((line, index) => {
+        const values = line.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g) || line.split(",");
+        const obj = { id: String(index + 1) };
+        headers.forEach((h, i) => {
+          let val = (values[i] || "").trim().replace(/^"|"$/g, "");
+          obj[h] = val;
+        });
+        obj.fiyat = parseFloat(String(obj.fiyat || "0").replace(",", ".")) || 0;
+        return obj;
+      }).filter(p => p.ad);
+    }
+
+    async function initCatalog() {
+      if (SHEET_CSV_URL && SHEET_CSV_URL.startsWith("http")) {
+        try {
+          const res = await fetch(SHEET_CSV_URL);
+          const csvText = await res.text();
+          const parsed = parseCSV(csvText);
+          allProducts = parsed.length > 0 ? parsed : FALLBACK_PRODUCTS;
+        } catch (e) {
+          allProducts = FALLBACK_PRODUCTS;
+        }
+      } else {
+        allProducts = FALLBACK_PRODUCTS;
+      }
+
+      renderStats();
+      renderCampaigns();
+      renderCategories();
+      renderProducts();
+      updateCartUI();
+    }
+
+    function renderStats() {
+      const cats = [...new Set(allProducts.map(p => p.kategori).filter(Boolean))];
+      document.getElementById("stat-cat").textContent = cats.length;
+      document.getElementById("stat-prod").textContent = allProducts.length;
+    }
+
+    function renderCampaigns() {
+      const camps = allProducts.filter(p => (p.kampanya || "").toLowerCase() === "evet");
+      const section = document.getElementById("campaignSection");
+      const grid = document.getElementById("campaignGrid");
+      if (camps.length === 0) { section.style.display = "none"; return; }
+      section.style.display = "block";
+      grid.innerHTML = camps.map(p => `
+        <div class="campaign-card">
+          <div>
+            <span class="campaign-tag">FIRSAT</span>
+            <div class="product-img-wrap" style="border-radius:10px; margin-bottom:8px;">
+              <img src="${p.resim || 'https://via.placeholder.com/300?text=Urun'}" alt="${p.ad}" loading="lazy">
+            </div>
+            <div class="product-title">${p.ad}</div>
+            <div class="product-desc">${p.aciklama || ''}</div>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">${p.fiyat > 0 ? p.fiyat.toLocaleString('tr-TR') + ' ₺' : 'Fiyat Sorunuz'}</span>
+            <button class="btn-add" onclick="addToCart('${p.id}')">+ Ekle</button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderCategories() {
+      const cats = ["Tümü", ...new Set(allProducts.map(p => p.kategori).filter(Boolean))];
+      const container = document.getElementById("categoryTabs");
+      container.innerHTML = cats.map(c => `
+        <button class="cat-btn ${c === selectedCategory ? 'active' : ''}" onclick="selectCategory('${c}')">${c}</button>
+      `).join("");
+    }
+
+    function selectCategory(cat) {
+      selectedCategory = cat;
+      renderCategories();
+      renderProducts();
+    }
+
+    function renderProducts() {
+      const filtered = allProducts.filter(p => {
+        const matchCat = selectedCategory === "Tümü" || p.kategori === selectedCategory;
+        const q = searchQuery.toLowerCase();
+        const matchSearch = !q || (p.ad || "").toLowerCase().includes(q) || (p.kategori || "").toLowerCase().includes(q) || (p.aciklama || "").toLowerCase().includes(q);
+        return matchCat && matchSearch;
+      });
+
+      document.getElementById("showingCount").textContent = `${filtered.length} ürün listeleniyor`;
+      const grid = document.getElementById("productGrid");
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<p style="grid-column:1/-1; text-align:center; padding:30px; color:var(--muted);">Aramanıza uygun ürün bulunamadı.</p>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(p => `
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-cat-badge">${p.kategori || 'Genel'}</span>
+            <img src="${p.resim || 'https://via.placeholder.com/400?text=Yalcin+Toplu+Tuketim'}" alt="${p.ad}" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div>
+              <div class="product-title">${p.ad}</div>
+              <div class="product-desc">${p.aciklama || ''}</div>
+            </div>
+            <div class="product-footer">
+              <span class="product-price">${p.fiyat > 0 ? p.fiyat.toLocaleString('tr-TR') + ' ₺' : 'Fiyat Sorunuz'}</span>
+              <button class="btn-add" onclick="addToCart('${p.id}')">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    document.getElementById("searchInput").addEventListener("input", (e) => {
+      searchQuery = e.target.value;
+      renderProducts();
+    });
+
+    function addToCart(id) {
+      cart[id] = (cart[id] || 0) + 1;
+      saveCart();
+      updateCartUI();
+    }
+
+    function changeQty(id, delta) {
+      if (!cart[id]) return;
+      cart[id] += delta;
+      if (cart[id] <= 0) delete cart[id];
+      saveCart();
+      updateCartUI();
+      renderCartItems();
+    }
+
+    function saveCart() {
+      localStorage.setItem("yalcin_cart", JSON.stringify(cart));
+    }
+
+    function updateCartUI() {
+      let totalQty = 0;
+      let totalPrice = 0;
+      Object.entries(cart).forEach(([id, qty]) => {
+        const prod = allProducts.find(p => p.id === id);
+        if (prod) {
+          totalQty += qty;
+          totalPrice += (prod.fiyat || 0) * qty;
+        }
+      });
+
+      const bar = document.getElementById("cartBar");
+      if (totalQty === 0) {
+        bar.classList.add("hidden");
+      } else {
+        bar.classList.remove("hidden");
+        document.getElementById("cartCount").textContent = `${totalQty} Ürün`;
+        document.getElementById("cartTotalText").textContent = totalPrice > 0 ? `Toplam: ${totalPrice.toLocaleString('tr-TR')} ₺` : "Sepeti Gör";
+      }
+    }
+
+    function openCart() {
+      renderCartItems();
+      document.getElementById("cartModal").classList.add("open");
+    }
+
+    function closeCart() {
+      document.getElementById("cartModal").classList.remove("open");
+    }
+
+    function closeCartOutside(e) {
+      if (e.target.id === "cartModal") closeCart();
+    }
+
+    function renderCartItems() {
+      const container = document.getElementById("cartItems");
+      const entries = Object.entries(cart);
+      let totalPrice = 0;
+
+      if (entries.length === 0) {
+        container.innerHTML = `<p style="text-align:center; color:var(--muted); padding:20px;">Sepetiniz şu an boş.</p>`;
+        document.getElementById("modalTotal").textContent = "0 ₺";
+        return;
+      }
+
+      container.innerHTML = entries.map(([id, qty]) => {
+        const prod = allProducts.find(p => p.id === id);
+        if (!prod) return "";
+        const sub = (prod.fiyat || 0) * qty;
+        totalPrice += sub;
+        return `
+          <div class="cart-item">
+            <div class="cart-item-info">
+              <strong>${prod.ad}</strong>
+              <span>${prod.fiyat > 0 ? prod.fiyat.toLocaleString('tr-TR') + ' ₺ x ' + qty : qty + ' Adet'}</span>
+            </div>
+            <div class="qty-controls">
+              <button class="qty-btn" onclick="changeQty('${id}', -1)">-</button>
+              <strong>${qty}</strong>
+              <button class="qty-btn" onclick="changeQty('${id}', 1)">+</button>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      document.getElementById("modalTotal").textContent = totalPrice > 0 ? `${totalPrice.toLocaleString('tr-TR')} ₺` : "Fiyat Sorulacak";
+    }
+
+    function sendWhatsAppOrder() {
+      const entries = Object.entries(cart);
+      if (entries.length === 0) return;
+
+      let lines = ["Merhaba *Yalçın Toplu Tüketim*, katalog üzerinden sipariş vermek istiyorum:\n"];
+      let totalPrice = 0;
+
+      entries.forEach(([id, qty], index) => {
+        const prod = allProducts.find(p => p.id === id);
+        if (prod) {
+          const sub = (prod.fiyat || 0) * qty;
+          totalPrice += sub;
+          const priceStr = prod.fiyat > 0 ? ` (${sub.toLocaleString('tr-TR')} ₺)` : "";
+          lines.push(`${index + 1}. *${prod.ad}* - ${qty} Adet${priceStr}`);
+        }
+      });
+
+      if (totalPrice > 0) {
+        lines.push(`\n*Tahmini Toplam:* ${totalPrice.toLocaleString('tr-TR')} ₺`);
+      }
+
+      const note = document.getElementById("orderNote").value.trim();
+      if (note) {
+        lines.push(`\n*Müşteri Notu / Adres:* ${note}`);
+      }
+
+      const message = encodeURIComponent(lines.join("\n"));
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+    }
+
+    initCatalog();
+  </script>
+</body>
+</html>
